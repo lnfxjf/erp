@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+    <link href="jquery-easyui-1.3.6(1)/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="jquery-easyui-1.3.6(1)/themes/icon.css" rel="stylesheet" type="text/css" />
+    <link href="jquery-easyui-1.3.6(1)/demo/demo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-easyui-1.3.6(1)/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.3.6(1)/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+ <style type="text/css">
+        *
+        {
+			margin:0px;
+			padding:0px;
+            font-size: 12px;
+        }
+
+        #Select1
+        {
+            width: 143px;
+        }
+
+        #Select2
+        {
+            width: 143px;
+        }
+
+        .auto-style3
+        {
+            height: 23px;
+        }
+
+        #Button1
+        {
+            width: 78px;
+        }
+
+        #Button2
+        {
+            width: 81px;
+        }
+
+        .auto-style4
+        {
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .auto-style5
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 71px;
+        }
+
+        .auto-style7
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 79px;
+        }
+
+        .auto-style8
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 77px;
+        }
+
+        .auto-style9
+        {
+            border-bottom: 1px solid #ffffff;
+            color: #000080;
+        }
+
+        .auto-style10
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 71px;
+            color: #000080;
+        }
+
+        .auto-style11
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 79px;
+            color: #000080;
+        }
+
+        .hed
+        {
+            color: #000080;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="w" class="easyui-window" title="人员主文件设定" style="background: #d7e7ff; width: 225px; height: 240px; padding: 10px;">
+        <div style="background: #d7e7ff; width: 200px; margin: auto;">
+            <div style="width: 200px; margin: auto;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="auto-style9" >部门编号</td>
+                        <td>
+                            <input id="Text1" type="text" /></td>
+                                                </tr>
+                    <tr>
+                        <td class="auto-style4">部门名称</td>
+                        <td>
+                            <input id="Text2" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">英文名称</td>
+                        <td>
+                            <input id="Text91" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">备注</td>
+                        <td>
+                            <textarea id="textarea1" rows="6" cols="16"></textarea></td>
+                    </tr>
+                </table>
+				
+            </div>
+
+            <div style="width: 200px; margin: auto;">
+               <select style="width: 50px;" class="easyui-combobox" name="state">
+                                <option value="AL">设定</option>
+                                <option value="AK">业务员责任绩效设定</option>
+                            </select>    
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

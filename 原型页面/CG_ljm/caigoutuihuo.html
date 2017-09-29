@@ -1,0 +1,180 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>采购退货</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/demo/demo.css" />
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.easyui.min.js"></script>
+    
+</head>
+<body>
+    
+    <div id="s" class="easyui-window" title="采购退货单" data-options="iconCls:'icon-save'" style="width: 560px; height: 500px; padding: 10px; padding-bottom: 7px;">
+        <table class="t1">
+            <tr>
+                <td>供应商</td>
+                <td>
+                    <input id="gys" type="text" /></td>
+                <td>单据日期&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input id="Text29" type="text" /></td>
+            </tr>
+            <tr>
+                <td>供应商地址</td>
+                <td>
+                    <input id="Text30" type="text" /></td>
+                <td>单据号码</td>
+                <td>
+                    <input id="Text31" type="text" /></td>
+            </tr>
+            <tr>
+                <td>单价是否含税</td>
+                <td>
+                    <select id="Select6" style="width: 131px; margin: 2px;">
+                        <option>含税</option>
+                        <option>未税</option>
+                    </select></td>
+                <td>币别</td>
+                <td>
+                    <input id="Text33" type="text" /></td>
+            </tr>
+            <tr>
+                <td>仓库</td>
+                <td>
+                    <input id="Text34" type="text" /></td>
+                <td>汇率</td>
+                <td>
+                    <input id="Text35" type="text" /></td>
+            </tr>
+            <tr>
+                <td>重新入库</td>
+                <td>
+                    <select id="Select7" style="width: 131px; margin: 2px;">
+                        <option>否</option>
+                        <option>是</option>
+                    </select></td>
+                <td>国外贸易</td>
+                <td>
+                    <select id="Select8" style="width: 131px; margin: 2px;">
+                        <option>否</option>
+                        <option>是</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>凭证编号</td>
+                <td>
+                    <input id="Text32" type="text" /></td>
+            </tr>
+        </table>
+        <div class="easyui-tabs" style="padding: 0px; margin-bottom: 10px; height: 150px;">
+            <div title="内容" style="padding: 10px; padding: 0px;">
+                <div style="overflow: auto; height: 115px; width: 500px; margin: auto; border: 1px solid #8eafdb; overflow-x: auto">
+                    <table border="1" style="width: 1500px; border: 1px solid #8cb0db">
+
+                        <thead style="border: 1px solid #A0A0A0;">
+                            <tr>
+                                <td>栏号</td>
+                                <td>物料编号</td>
+                                <td>物料名称</td>
+                                <td>规格型号</td>
+                                <td>单位名称</td>
+                                <td>数量</td>
+                                <td>折扣前单数</td>
+                                <td>折数(%)</td>
+                                <td>单价</td>
+                                <td>金额</td>
+                                <td>税率(%)</td>
+                                <td>税额</td>
+                                <td>含税金额</td>
+                                <td>批号</td>
+                                <td>赠品</td>
+                                <td>发票明细</td>
+                                <td>未开票数量</td>
+                                <td>分录备注</td>
+                                <td>来源单别</td>
+                                <td>来源单号</td>
+                            </tr>
+                        </thead>
+                        <tbody style="background: #ffffff">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div title="账款" style="padding: 10px; padding: 0px; height: 150px;">
+            </div>
+
+            <div title="其他" style="padding: 10px; height: 150px;">
+                <table class="t1">
+                    <tr>
+                        <td>自定栏一</td>
+                        <td>
+                            <select style="width: 131px">
+                                <option></option>
+                            </select></td>
+                        <td>自定栏二</td>
+                        <td>
+                            <select style="width: 131px">
+                                <option></option>
+                            </select></td>
+
+                    </tr>
+                </table>
+                <table class="t1">
+                    <tr>
+                        <td>备注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+                            <textarea style="width: 370px; height: 56px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <table class="t1">
+            <tr>
+                <td>采购人员</td>
+                <td>
+                    <input id="Text36" value="朱采购" type="text" /></td>
+                <td>制单人员&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input id="Text37" value="Admin" type="text" /></td>
+            </tr>
+            <tr>
+                <td>所属部门</td>
+                <td>
+                    <input id="Text38" value="朱采购" type="text" /></td>
+                <td>复核人员</td>
+                <td>
+                    <input id="Text39" value="Admin" type="text" /></td>
+            </tr>
+            <tr>
+
+                <td>所属项目</td>
+                <td>
+                    <input id="Text40" type="text" /></td>
+            </tr>
+
+        </table>
+
+
+        <select id="Select4">
+            <option>设定</option>
+            <option>期初账款设定</option>
+            <option>原厂物料设定</option>
+        </select>
+        <select id="Select5">
+            <option>功能</option>
+            <option>写信</option>
+            <option>上网</option>
+            <option>历史交易查询</option>
+            <option>数额数据校验</option>
+        </select>
+    </div>
+</body>
+</html>

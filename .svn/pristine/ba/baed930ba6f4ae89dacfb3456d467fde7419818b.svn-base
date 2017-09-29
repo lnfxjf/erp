@@ -1,0 +1,206 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <center><div style="width:600px;height:460px; background-color:#cce1f1">
+              销售订单
+            <div style="background-color:#D7E7FF;width:580px;height:430px">
+                <table style="width:100%;font-size:12px;border-spacing:0px 0px">
+                    <br />
+                    <tr>
+                        <td>客户:</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                        <td>单据日期：</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                     <tr>
+                        <td>送货地址:</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                        <td>单据号码：</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                     <tr>
+                        <td>销售订单类型:</td>
+                        <td><input id="Text1" type="text" style="width:75%"  /></td>
+                        <td>客户订单：</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                     <tr>
+                        <td>单价是否含税:</td>
+                        <td><select id="Select1" style="width:77.5%;height:100.5%">
+                        <option>未税</option>
+                        <option>已税</option>
+                        </select></td>
+                        <td>币别：</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                     <tr>
+                        <td>单况:</td>
+                        <td><select id="Select1" style="width:77.5%;height:100.5%">
+                        <option>未结案</option>
+                        <option>已结案</option>
+                        <option>无效</option>
+                        </select></td>
+                        <td>汇率：</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                </table>
+                <br />
+                <div style="overflow: auto;border:1px solid #808080; width:570px;height:130px">
+                <table style="width:1500px" border="1">
+                    <thead >
+                        <tr>
+                            <td>栏号</td>
+                            <td>物料编号</td>
+                            <td>物料名称</td>
+                            <td>规格型号</td>
+                            <td>单位名称</td>
+                            <td>数量</td>
+                            <td>折扣前单价</td>
+                            <td>折数(%)</td>
+                            <td>单价</td>
+                            <td>金额</td>
+                            <td>税率(%)</td>
+                            <td>税额</td>
+                            <td>含税金额</td>
+                            <td>预出库日</td>
+                            <td>未出数量</td>
+                            <td>赠品</td>
+                            <td>分录备注</td>
+                            <td>物料组合</td>
+                            <td>来源单号</td>
+                            <td>生产</td>
+                            <td>排成单号</td>
+                            <td>已产数量</td>
+                     </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                     </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1(%)</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                     </tr>
+                     <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                     </tr>
+                    </thead>
+                </table>
+                
+               </div>
+                <table style="width:100%;font-size:12px;border-spacing:0px 0px">
+                    <tr>
+                        <td>业务人员:</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                        <td>制单人员：</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                    <tr>
+                        <td>所属部门:</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                        <td>复核人员：</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                     <tr>
+                        <td>所属项目:</td>
+                        <td><input id="Text1" type="text" style="width:75%" /></td>
+                    </tr>
+                </table>
+                      <select id="Select1"style="font-family: 宋体; background-color:#cce1f1;width:120px;height:25px; margin-left:-200px;">
+                        <option>查询</option>
+                        <option>历史交易查询</option>
+                        <option>转账记录查询</option>
+                        <option>利润估计查询</option>
+                        <option>定金查询</option>
+                        
+                      
+                    </select> 
+                 <select id="Select1"style="font-family: 宋体; background-color:#cce1f1;width:120px;height:25px; margin-left:0px;">
+                        <option>转单</option>
+                        <option>转销售出库单</option>
+                        <option>销售报价转入</option>
+                        
+                      
+                    </select> 
+                 <select id="Select1"style="font-family: 宋体; background-color:#cce1f1;width:120px;height:25px; margin-left:0px;">
+                        <option>功能</option>
+                        <option>批次变更单价</option>
+                        <option>物料组合设定</option>
+                        <option>单况状态切换</option>
+                      
+                    </select> 
+
+            </div>
+
+        </div></center>
+    </div>
+</body>
+</html>

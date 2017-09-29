@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <title>客户主文件</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/demo/demo.css" />
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.easyui.min.js"></script>
+
+    <style>
+        .t1 tr td
+        {
+            padding-right: 14px;
+            padding-left: 14px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+    
+      <div id="w" class="easyui-window" title="客户主文件设定" style="width: 550px; height: 527px; padding: 10px; padding-bottom: 7px;">
+        <table class="t1">
+            <tr>
+                <td>客户编号</td>
+                <td>
+                    <input id="gysbh" type="text" /></td>
+                <td>账款归属&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input id="zkgs" type="text" /></td>
+            </tr>
+            <tr>
+                <td>客户全称</td>
+                <td>
+                    <input id="gysqc" type="text" /></td>
+                <td>类别</td>
+                <td>
+                    <input id="lb" type="text" /></td>
+            </tr>
+            <tr>
+                <td>客户简称</td>
+                <td>
+                    <input id="gysjc" type="text" /></td>
+                <td>地区</td>
+                <td>
+                    <input id="dq" type="text" /></td>
+            </tr>
+            <tr>
+                <td>英文全称</td>
+                <td>
+                    <input id="ywqc" type="text" /></td>
+                <td>币别</td>
+                <td>
+                    <input id="bb" type="text" /></td>
+            </tr>
+            <tr>
+                <td>英文简称</td>
+                <td>
+                    <input id="ywjc" type="text" /></td>
+            </tr>
+        </table>
+        <div class="easyui-tabs" style="padding: 0px; margin-bottom: 5px; height: 295px;">
+            <div title="基本资料" style="padding: 10px; padding: 0px;">
+                <table class="t1">
+                    <tr>
+                        <td>负责人</td>
+                        <td>
+                            <input id="Text1" type="text" /></td>
+                        <td>采购人员</td>
+                        <td>
+                            <input id="Text2" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>联系人</td>
+                        <td>
+                            <input id="Text3" type="text" /></td>
+                        <td>税务登记号</td>
+                        <td>
+                            <input id="Text4" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>联系电话一</td>
+                        <td>
+                            <input id="Text5" type="text" /></td>
+                        <td>资本额</td>
+                        <td>
+                            <input id="Text6" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>联系电话二</td>
+                        <td>
+                            <input id="Text7" type="text" /></td>
+                        <td>行业别</td>
+                        <td>
+                            <input id="Text8" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>联系电话三</td>
+                        <td>
+                            <input id="Text9" type="text" /></td>
+                        <td>电子邮件</td>
+                        <td>
+                            <input id="Text10" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>移动电话</td>
+                        <td>
+                            <input id="Text11" type="text" /></td>
+                        <td>网址</td>
+                        <td>
+                            <input id="Text12" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>银行账号</td>
+                        <td>
+                            <input id="Text13" type="text" /></td>
+                        <td>传真号码</td>
+                        <td>
+                            <input id="Text14" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>开户银行</td>
+                        <td>
+                            <input id="Text15" type="text" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div title="销售信息" style="height: 514px;">
+                <table class="t1" style="width: 100%">
+                    <tr>
+                        <td style="width: 23%">最初销售入库日</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 90%"></input>
+                        </td>
+                        <td style="width: 15%">折数(%)</td>
+                        <td>
+                            <input id="Text16" type="text" style="width: 90%" /></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 23%">最初销售退货日</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 90%"></input>
+                        </td>
+                        <td style="width: 20%">销售等级</td>
+                        <td>
+                            <select id="Select1" style="width: 94%">
+                                <option>建议售价</option>
+                                <option>售价A</option>
+                                <option>售价B</option>
+                                <option>售价C</option>
+                                <option>售价D</option>
+                                <option>售价E</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>最近销售出库日</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 90%"></input>
+                        </td>
+                        <td style="width: 20%">单价是否含税</td>
+                        <td>
+                            <select id="Select2" style="width: 94%">
+                                <option>未税</option>
+                                <option>含税</option>
+
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>最近销售退货日</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 90%"></input>
+                        </td>
+                        <td style="width: 20%">潜在客户编号</td>
+                        <td>
+                            <input id="Text17" type="text" style="width: 90%" /></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>最近拜访日</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 90%"></input>
+                        </td>
+                        </td>
+                        <td>客户建立日期</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 97%"></input>
+                        </td>
+                    </tr>
+                    <tr>
+
+
+                        <td>预约拜访日</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 90%"></input>
+                        </td>
+                        <td>终止交易日</td>
+                        <td>
+                            <input class="easyui-datebox" style="width: 94%"></input>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div title="付款信息" style="padding: 0px; height: 514px;">
+                <table class="t1">
+                    <tr>
+                        <td>额度设定</td>
+                        <td></td>
+                        <td>账款信息</td>
+                    </tr>
+                    <tr>
+                        <td>账款额度</td>
+                        <td>
+                            <input id="Text18" type="text" /></td>
+                        <td>期初预付款</td>
+                        <td>
+                            <input id="Text19" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>剩余额度</td>
+                        <td>
+                            <input id="Text20" type="text" /></td>
+                        <td>期初应付款</td>
+                        <td>
+                            <input id="Text21" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>付款条件</td>
+                        <td>
+                            <select style="margin: 2px;">
+                                <option>货到</option>
+                            </select><input id="Text22" style="width: 65px;" type="text" />天</td>
+                        <td>期末预付款</td>
+                        <td>
+                            <input id="Text23" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td style="">每月结账日</td>
+                        <td>
+                            <input style="width: 115px; margin-left: 3px;" id="Text24" type="text" />号</td>
+                        <td>期末应付款</td>
+                        <td>
+                            <input id="Text25" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>信用等级</td>
+                        <td>
+                            <select style="width: 131px; margin: 2px;">
+                                <option>A</option>
+                            </select></td>
+                        <td>未开票金额</td>
+                        <td>
+                            <input id="Text26" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>发票类型</td>
+                        <td>
+                            <input id="Text27" type="text" /></td>
+                        <td style="padding-right: 0px;">预付账款科目</td>
+                        <td>
+                            <input id="Text28" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="padding-right: 0px;">应付账款科目</td>
+                        <td>
+                            <input id="Text29" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="padding-right: 0px;">应付暂估科目</td>
+                        <td>
+                            <input id="Text30" type="text" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div title="地址" style="padding: 10px; height: 514px;">
+                <div style="overflow: auto; height: 240px; width: 500px; margin: auto; border: 1px solid #8eafdb; overflow-x: auto">
+                    <table border="1" style="width: 1500px; border: 1px solid #8cb0db">
+
+                        <thead style="border: 1px solid #A0A0A0;">
+                            <tr>
+                                <td>地址编号</td>
+                                <td>地址</td>
+                                <td>邮政编码</td>
+                                <td>联系人</td>
+                                <td>联系人职称</td>
+                                <td>联系电话</td>
+                                <td>传真号码</td>
+                                <td>行走路线</td>
+                                <td>备注</td>
+                            </tr>
+                        </thead>
+                        <tbody style="background: #ffffff">
+
+                            <tr>
+                                <td>地址编号</td>
+                                <td>地址</td>
+                                <td>邮政编码</td>
+                                <td>联系人</td>
+                                <td>联系人职称</td>
+                                <td>联系电话</td>
+                                <td>传真号码</td>
+                                <td>行走路线</td>
+                                <td>备注</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div title="其他" style="padding: 10px; height: 514px;">
+                <table class="t1">
+                    <tr>
+                        <td>自定栏一</td>
+                        <td>
+                            <select style="width: 131px">
+                                <option></option>
+                            </select></td>
+                        <td>自定栏二</td>
+                        <td>
+                            <select style="width: 131px">
+                                <option></option>
+                            </select></td>
+
+                    </tr>
+                </table>
+                <table class="t1">
+                    <tr>
+                        <td>备注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+                            <textarea style="width: 370px; height: 200px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <select id="Select3">
+            <option>设定</option>
+            <option>期初账款设定</option>
+            <option>原厂物料设定</option>
+        </select>
+        <select id="Select4">
+            <option>功能</option>
+            <option>写信</option>
+            <option>上网</option>
+            <option>历史交易查询</option>
+            <option>数额数据校验</option>
+        </select>
+    </div>
+
+</body>
+</body>
+</html>

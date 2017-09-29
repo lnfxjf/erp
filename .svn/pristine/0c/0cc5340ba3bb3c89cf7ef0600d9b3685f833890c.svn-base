@@ -1,0 +1,138 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>xiaoshoubaojia</title>
+</head>
+<body>
+        <center style="background-color:#cce1f1;width:590px;height:407px;margin:0px auto;">
+     <label style="margin-left:-480px;font-size:15px">销售报价单</label>
+
+
+    <div style="background-color:#D7E7FF;width:580px;height:380px;margin:0px auto">
+
+    <div style="text-align:center">
+             <table style="margin:0px auto;width:100%;font-size:12px">               
+                 <tr>
+                     <td>正式客户</td>
+                     <td><input id="Text1" type="text" style="width:75%" /></td>     
+                                    
+                     <td>单据日期</td>
+                     <td><input id="Text2" type="date" style="width:75%" /></td>
+                 </tr>
+                 <tr>
+                     <td>送货地址</td>
+                     <td><input id="Text3" type="text" style="width:75%"/></td>
+
+                     <td>单据号码</td>
+                     <td><input id="Text4" type="text" style="width:75%" /></td>
+                 </tr>
+                 <tr>
+                     <td>有效日期</td>
+                     <td><input id="Text5" type="date" style="width:75%"/></td>
+
+                     <td>币别</td>
+                     <td><select id="Select1" style="width:75%;height:100.5%">
+                         <option>人民币</option>
+                     </select></td>                   
+                 </tr>
+
+                 <tr>
+                     <td>是否含税?</td>
+                     <td><select id="Select2" style="width:75%;height:100.5%">
+                         <option value="未税">未税</option>
+                         <option value="含税">含税</option>
+                     </select></td>
+
+                     <td>汇率</td>
+                     <td><input id="Text6" type="text" style="width:75%"/></td>
+                 </tr>
+             </table>
+
+        </div>
+
+    <div style="overflow:auto;width:550px;margin:0px auto;height:130px">
+             <table style="width:1500px;" border="1">
+                 <tr>
+                     <td>物料编号</td>
+                     <td>(物料名称)</td>
+                     <td>(规格型号)</td>
+                     <td>(单位名称)</td>
+                     <td>数量</td>
+                     <td>折扣前价</td>
+                     <td>折数</td>
+                     <td>单价</td>
+                     <td>金额</td>
+                     <td>税率(%)</td>
+                     <td>(税额)</td>
+                     <td>(含税金额)</td>
+                     <td>赠品</td>
+                     <td>备注</td>
+                 </tr>
+                 <tr>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                     <td>a</td>
+                 </tr>
+                 <tr>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                     <td>b</td>
+                 </tr>
+             </table>
+        </div>
+
+    <div style="text-align:center">
+             <table style="margin:0px auto;width:100%;font-size:12px">
+                 <tr>
+                     <td>业务人员</td>
+                     <td><input id="Text7" type="text" style="width:75%" /></td>
+                     <td>制单人员</td>
+                     <td><input id="Text8" type="text" style="width:75%" /></td>
+                 </tr>
+                 <tr>
+                     <td>所属部门</td>
+                     <td><input id="Text9" type="text" style="width:75%" /></td>
+                     <td>复核人员</td>
+                     <td><input id="Text10" type="text" style="width:75%" /></td>
+                 </tr>
+             </table>
+        </div>
+
+          <select id="Select3" style="width:80px;height:27px;margin-top:16px;margin-left:-370px;background-color:#cce1f1">
+          <option>查询</option>
+              <option>历史交易查询</option>
+              <option>利润预估查询</option>
+          </select>
+
+            <select id="Select4" style="width:80px;height:27px;margin-top:16px;margin-left:13px;background-color:#cce1f1">
+          <option>功能</option>
+                <option>批次变更单价</option>
+                <option>发送EMail</option>
+          </select>
+
+          </div>
+
+            </center>
+</body>
+</html>

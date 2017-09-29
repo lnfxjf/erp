@@ -1,0 +1,92 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>物料类别</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/demo/demo.css" />
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.easyui.min.js"></script>
+    
+</head>
+<body>
+ <div id="w" class="easyui-window" title="物料类别" data-options="iconCls:'icon-save',minimizable:false,tools:'#tt'" style="width: 310px; height: 400px; padding: 10px; background-color: #cce1f1;">
+
+        <center>
+
+
+            
+        <table>
+            <tr>
+                     
+                <td>类别编号 &#160; &#160; &#160; &#160;
+          
+                    <input id="Text1" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>
+                类别名称  &#160; &#160; &#160; &#160;
+    
+                    <input id="Text2" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>英文名称  &#160; &#160; &#160; &#160;
+               
+                    <input id="Text3" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>存货科目  &#160; &#160; &#160; &#160;
+                
+                    <input id="Text4" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>销售收入科目 &#160;
+               
+                    <input id="Text5" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>发出商品科目 &#160;
+              
+                    <input id="Text6" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>赠品费用科目 &#160;
+               
+                    <input id="Text7" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>其他费用科目 &#160;
+              
+                    <input id="Text8" type="text" /></td>
+
+            </tr>
+            <tr>
+                <td>其他费用科目 &#160;
+               
+                    <input id="Text9" type="text" /></td>
+
+            </tr>
+            
+            <tr>
+               <td>备注 &#160; &#160;&#160; &#160; &#160; &#160;&#160; &#160;
+       
+                   <input id="Text10" type="text" style="width:160px;height:70px;"/>
+                   </td>
+
+            </tr>
+        </table>
+     </center>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <script src="jquery-1.8.2.js"></script>
+    <script>
+        var dd = new Date();
+        $(function () {
+            $("#date").val(dd.toLocaleDateString());
+        });
+
+        function b() {
+            location.href = '/f/Index';
+        }
+    </script>
+
+</head>
+<body>
+     <div style="margin: 0px auto; border: 1px solid #808080; height: 480px; width: 620px; background-color: #CDDBE8;">
+        <div style="font-size: 13px; margin-left: 14px">应收冲款单</div>
+        <div style="margin: 0px auto; border: 1px solid #D7E7FF; height: 450px; width: 600px; background-color: #D7E7FF;">
+
+            <table style="width: 100%; margin-left: 14px; font-size: 13px; font-family: 宋体; border-spacing: 0px 0px; margin-top: 5px">
+                <tr>
+                    <td style="font-family: 宋体; font-size: 15px">客户</td>
+                    <td>
+                        <input id="" type="text" style="width: 150px" /></td>
+                    <td>单据日期</td>
+                    <td>
+                        <input id="djrq" type="text" style="width: 150px" value="2017-09-23" />
+                    </td>
+                </tr>
+
+               <tr>
+                    <td>结算方式一</td>
+                    <td>
+                        <input id="Text1" type="text" value="转账" style="width: 96px" /><input id="Text2" type="text" style="width: 50px;text-align:right" value="0.00" />
+                    </td>
+
+                    <td>单据号码</td>
+                    <td>
+                        <input id="Text3" type="text" style="width: 150px"  value="2017092301"/></td>
+                </tr>
+                <tr>
+                    <td>结算方式二</td>
+                    <td>
+                        <input id="Text4" type="text" style="width: 96px" value="汇票" /><input id="Text5" type="text" style="width: 50px;text-align:right" value="0.00" />
+                    </td>
+
+                    <td>币别</td>
+                    <td>
+                        <input id="Text6" type="text" style="width: 150px" value="人民币" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>结算方式三</td>
+                    <td>
+                        <input id="Text7" type="text" style="width: 96px" value="微信支付" /><input id="Text8" type="text" style="width: 50px;text-align:right" value="0.00" />
+                    </td>
+
+                    <td>汇率</td>
+                    <td>
+                        <input id="Text9" type="text" style="width: 150px;text-align:right" value="1.0000"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="font-family: 宋体; font-size: 15px">折扣率%</td>
+                    <td>
+                        <input id="Text10" type="text" style="width: 150px; text-align: right" value="0.00" />
+                    </td>
+                    <td style="font-family: 宋体; font-size: 15px">应收冲款类型</td>
+                    <td>
+                         <input id="Text17" type="text" style="width: 150px; " value="预收冲应收" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="font-family: 宋体; font-size: 15px">终止帐月</td>
+                    <td>
+                        <input id="Text11" type="text" style="width: 150px" value="2017-09" />
+                    </td>
+                    <td style="font-family: 宋体; font-size: 15px">凭证编号</td>
+                    <td>
+                        <input id="Text12" type="text" style="width: 150px" />
+                    </td>
+                </tr>
+            </table>
+
+            <br />
+
+            <div style="border: 1px solid #808080; width: 560px; margin: 0px auto">
+                <div style="width: 550px; font-size: 14px; font-family: 宋体; margin: 0px auto;">
+                    <div style="overflow: auto">
+                        <table style="width: 1500px; height: 100%" border="1">
+                            <thead style="text-align: center">
+                                <tr>
+                                    <td style="width:100px">预付金额</td>
+                                    <td style="width:150px">来源单别</td>
+                                    <td style="width:250px">来源单号</td>
+                                    <td>摘要</td>
+
+                                </tr>
+                            </thead>
+                            <tbody style="background-color: #fff">
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <table style="width: 100%; margin: 0px auto; margin-left: 14px; font-size: 13px">
+                <tr>
+                    <td style="font-family: 宋体; font-size: 15px">所属部门</td>
+                    <td>
+                        <input id="Text13" type="text" style="width: 150px" />
+                    </td>
+                    <td>制单人员</td>
+                    <td>
+                        <input id="Text14" type="text" style="width: 150px" value="Admin" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: 宋体; font-size: 15px">所属项目</td>
+                    <td>
+                        <input id="Text15" type="text" style="width: 150px" />
+                    </td>
+                    <td>复核人员</td>
+                    <td>
+                        <input id="Text16" type="text" style="width: 150px" />
+                    </td>
+                </tr>
+
+            </table>
+
+            <br />
+
+            <div style="margin-left: 20px">
+                <select id="Select2" style="font-family: 宋体; background-color: #cce1f1; width: 50px; height: 25px">
+                    <option>功能</option>
+                    <option>载入单币别帐款</option>
+                    <option>载入多币别帐款</option>
+                </select>
+
+                <select id="Select3" style="font-family: 宋体; background-color: #cce1f1; width: 80px; height: 25px">
+                    <option>自动计算</option>
+                    <option>以下冲款</option>
+                    <option>以下折让</option>
+                    <option>以下空白</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

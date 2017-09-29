@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+    <link href="jquery-easyui-1.3.6(1)/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="jquery-easyui-1.3.6(1)/themes/icon.css" rel="stylesheet" type="text/css" />
+    <link href="jquery-easyui-1.3.6(1)/demo/demo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-easyui-1.3.6(1)/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.3.6(1)/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+ <style type="text/css">
+        *
+        {
+            font-size: 12px;
+        }
+
+        #Select1
+        {
+            width: 143px;
+        }
+
+        #Select2
+        {
+            width: 143px;
+        }
+
+        .auto-style3
+        {
+            height: 23px;
+        }
+
+        #Button1
+        {
+            width: 78px;
+        }
+
+        #Button2
+        {
+            width: 81px;
+        }
+
+        .auto-style4
+        {
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .auto-style5
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 71px;
+        }
+
+        .auto-style7
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 79px;
+        }
+
+        .auto-style8
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 77px;
+        }
+
+        .auto-style9
+        {
+            border-bottom: 1px solid #ffffff;
+            color: #000080;
+        }
+
+        .auto-style10
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 71px;
+            color: #000080;
+        }
+
+        .auto-style11
+        {
+            border-bottom: 1px solid #ffffff;
+            width: 79px;
+            color: #000080;
+        }
+
+        .hed
+        {
+            color: #000080;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="w" class="easyui-window" title="销售退货单" style="background: #d7e7ff; width: 570px; height: 560px; padding: 10px;">
+        <div style="background: #d7e7ff; width: 530px; margin: auto;">
+            <div style="width: 500px; margin: auto;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="auto-style9">客户</td>
+                        <td>
+                            <input id="Text1" type="text" /></td>
+                        <td class="auto-style10">单据日期</td>
+                        <td>
+                            <input class="easyui-datebox" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">送货地址</td>
+                        <td>
+                            <input id="Text2" type="text" /></td>
+                        <td class="auto-style10">单据号码</td>
+                        <td>
+                            <input id="Text9" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">单价是否含税</td>
+                        <td>
+                             <select style="width: 133px;" class="easyui-combobox" name="state">
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                            </select></td>
+                        <td class="auto-style10">币别</td>
+                        <td>
+                            <input id="Text91" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">仓库</td>
+                        <td>
+                           <input  type="text" id="text92"/>
+                        </td>
+                        <td class="auto-style10">汇率</td>
+                        <td>
+                            <input id="Text8" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">重新出库</td>
+                        <td>
+                            <select style="width: 133px;" class="easyui-combobox" name="state">
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                            </select>
+                        </td>
+                        <td class="auto-style10">国外贸易</td>
+                        <td>
+                            <input id="Text8" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style10">凭证编号</td>
+                        <td>
+                            <input id="Text8" type="text" /></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="easyui-tabs" style="width: 530px; height: 208px;">
+                <div title="内容" style="">
+                    <div style="overflow: auto; border: 1px solid #8eafdb; overflow-x: auto">
+                        <table style="width: 1500px; border: 1px solid #8cb0db">
+                            <thead style="border: 1px solid #A0A0A0; background: #d7e7ff;">
+                                <tr>
+                                    <td>栏号</td>
+                                    <td class="hed">物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                            </thead>
+                            <tbody style="background: #ffffff">
+                                <tr>
+                                    <td>1</td>
+                                    <td>物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>物料编号</td>
+                                    <td>物料名称</td>
+                                    <td>规格型号</td>
+                                    <td>单位名称</td>
+                                    <td>数量</td>
+                                    <td>折扣前单价</td>
+                                    <td>折数</td>
+                                    <td>单价</td>
+                                    <td>金额</td>
+                                    <td>税率</td>
+                                    <td>税额</td>
+                                    <td>含税金额</td>
+                                    <td>赠品</td>
+                                    <td>发票明细</td>
+                                    <td>未开票数量</td>
+                                    <td>来源单别</td>
+                                    <td>来源单号</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div title="账款" style="padding: 10px;">
+                      <div style="width: 500px; margin: auto;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="auto-style9">账款归属</td>
+                        <td colspan="2">
+                            <input id="Text1" type="text" /></td>
+                        <td class="auto-style10">收款日期</td>
+                        <td>
+                            <input class="easyui-datebox" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">收款条件</td>
+                        <td>
+                        <select style="width: 50px;" class="easyui-combobox" name="state">
+                                <option value="AL">转单</option>
+                                <option value="AK">Alaska</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="Text1" type="text" style="width::80px"/></td>
+                        <td class="auto-style10">账款月份</td>
+                        <td>
+                            <input class="easyui-datebox" /></td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+                <div title="备注" style="padding: 10px;">
+                          <div style="width: 500px; margin: auto;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="auto-style9">自定义拦一</td>
+                        <td>
+                           <select style="width: 150px;" class="easyui-combobox" name="state">
+                                <option value="AL"></option>
+                            </select> </td>
+                        <td class="auto-style10">自定义拦二</td>
+                        <td>
+                             <select style="width: 150px;" class="easyui-combobox" name="state">
+                                <option value="AL"></option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                    <td>备注</td>
+                    <td colspan="3">
+                    <textarea id="textarea1" rows="8" cols="54"></textarea>
+                    </td>
+                    </tr>
+                    
+                    </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div style="width: 500px; margin: auto;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="auto-style11">业务人员</td>
+                        <td class="auto-style3">
+                            <input id="Text11" type="text" /></td>
+                        <td class="auto-style8">制单人员</td>
+                        <td class="auto-style3">
+                            <input id="Text12" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">所属部门</td>
+                        <td>
+                            <input id="Text13" type="text" /></td>
+                        <td class="auto-style8">复核人员</td>
+                        <td>
+                            <input id="Text14" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">所属项目</td>
+                        <td colspan="3">
+                            <input id="Text15" type="text" /></td>
+                    </tr>
+                </table>
+                &nbsp;&nbsp;&nbsp;
+               <select style="width: 150px;" class="easyui-combobox" name="state">
+                                <option value="AL">转单</option>
+                                <option value="AK">Alaska</option>
+                            </select>
+
+                  <select style="width: 150px;" class="easyui-combobox" name="state">
+                                <option value="AL">查询</option>
+                                <option value="AK">Alaska</option>
+                            </select>
+                   <select style="width: 150px;" class="easyui-combobox" name="state">
+                                <option value="AL">功能</option>
+                                <option value="AK">Alaska</option>
+                            </select>       
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

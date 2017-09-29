@@ -1,0 +1,161 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>采购请购</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/themes/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../jquery-easyui-1.4.2/demo/demo.css" />
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery-easyui-1.4.2/jquery.easyui.min.js"></script>
+    
+</head>
+<body>
+  <div id="w" class="easyui-window" title="采购请购单" style="width: 550px; height: 527px; padding: 10px; padding-bottom: 7px;">
+        <table style="width: 100%; margin-left: 15px">
+            <tr>
+                <td>采购请购类型</td>
+                <td>
+                    <input class="textbox"></td>
+                <td>单据日期</td>
+                <td>
+                    <div style="margin: 20px 0;"></div>
+                    <input class="easyui-datebox" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>单况</td>
+                <td>
+                    <select class="easyui-combobox" style="width: 155px;">
+                        <option value="">未结案</option>
+                        <option value="">已结案</option>
+                        <option value="">无效</option>
+                    </select>
+                </td>
+                <td>单据号码</td>
+                <td>
+                    <input class="textbox"></td>
+            </tr>
+        </table>
+        <div class="easyui-tabs">
+            <div title="地址" style="padding: 10px; height: 514px;">
+                <table border="1" style="width: 1500px; height: 250px; border: 1px solid #8cb0db">
+                    <thead style="border: 1px solid #A0A0A0;">
+                        <tr>
+                            <td>(栏号)</td>
+                            <td>物料编号</td>
+                            <td>(物料名称)</td>
+                            <td>(规格型号)</td>
+                            <td>(单位名称)</td>
+                            <td>数量</td>
+                            <td>(币别)</td>
+                            <td>(标准进价)</td>
+                            <td>(标准进价金额)</td>
+                            <td>(币别)</td>
+                            <td>(单位)</td>
+                            <td>(进价金额)</td>
+                            <td>(需求日期)</td>
+                            <td>(建议采购日期)</td>
+                            <td>分录备注</td>
+                            <td>(来源单别)</td>
+                            <td>(来源单号)</td>
+                        </tr>
+                    </thead>
+                    <tbody style="background: #ffffff">
+                        <tr>
+                            <td>
+                                <br />
+                                <br />
+                                <br />
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div title="其他" style="padding: 10px; height: 514px;">
+                <table class="t1">
+                    <tr>
+                        <td>表头条文</td>
+                        <td>
+                            <input class="textbox"></td>
+                        <td>自定栏一</td>
+                        <td>
+                            <select class="easyui-combobox" style="width: 150px;">
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>表尾条文</td>
+                        <td>
+                            <input class="textbox"></td>
+                        <td>自定栏二</td>
+                        <td>
+                            <select class="easyui-combobox" style="width: 150px;">
+                            </select></td>
+                    </tr>
+                </table>
+                <table class="t1">
+                    <tr>
+                        <td>备注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+                            <textarea style="width: 370px; height: 200px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <table style="width: 100%; margin: 0px auto; margin-left: 15px">
+            <tr>
+                <td>请购人员</td>
+                <td>
+                    <input class="textbox"></td>
+
+                <td>制表人员</td>
+                <td>
+                    <input class="textbox" value="Admin"></td>
+
+            </tr>
+            <tr>
+                <td>请购部门</td>
+                <td>
+                    <input class="textbox"></td>
+                <td>复核人员</td>
+                <td>
+                    <input class="textbox"></td>
+            </tr>
+
+        </table>
+        <div style="margin-left: 20px">
+            <select class="easyui-combobox" style="width: 50px;">
+                <option>转单</option>
+                <option>销售订单转转入</option>
+            </select>
+            <select class="easyui-combobox" style="width: 50px;">
+                <option>功能</option>
+                <option>单位状态转化</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
